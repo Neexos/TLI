@@ -1,0 +1,18 @@
+*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 10px;
+	padding: 0.5px;
+}
+
+
+#entete {
+  font-weight : bold;
+}
+
+.amsterism{
+  color:red;
+}
+

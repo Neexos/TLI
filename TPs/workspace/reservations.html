@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		
+		<title>divavel Voyaaage !</title>
+		<link href="./voyage.css" media="all" rel="stylesheet" type="text/css"/>
+		<meta charset="utf-8"/>
+		
+	</head>
+
+	<nav>
+	  
+	  <li>
+	    <ul> <a href="./index.html">Accueil</a></ul>
+	    <ul> <a href="./reservations.html">Réservations</a></ul>
+	    <ul> <a href="./contact.html">A propos & Contact</a></ul>
+	  </li>
+	  
+	</nav>
+	
+	<body>
+	
+	  
+	    
+		<div>
+			<label id="entete">Réservations</label>
+
+	      </div>
+		  <form id="toto" action="reserver" method="post">
+		    <div>
+			<label for="destination">Nom<a class="amsterism">*</a> : </label>
+			<input name="destination" id="destination" type="text" placeholder="Votre nom..." required>
+		    </div>
+		  
+		    <div>
+			<label for="name">Nom<a class="amsterism">*</a> : </label>
+			<input name="name" id="name" type="text" placeholder="Votre nom..." required>
+		    </div>
+		    
+		    <div>
+			<label for="firstname">Prénom<a class="amsterism">*</a> : </label>
+			<input name="firstname" id="firstname" type="text" placeholder="Votre prénom..." required>
+		    </div>
+		    
+		    <div>
+			<label for="mail">Adresse Mail<a class="amsterism">*</a> : </label>
+			<input name="mail" id="mail" type="email" placeholder="Votre adresse mail..." required>
+		    </div>
+		    
+		    <div>
+			<label for="phone">Téléphone : </label>
+			<input name="phone" id="phone" placeholder="+33..." type="tel">
+		    </div>
+		    
+		    <div>
+			<label for="dateGo">Date de départ<a class="amsterism">*</a> : </label>
+			<input name="dateGo" id="dateGo" type="date" required>
+		    </div>
+		    
+		    <div>
+			<label for="dateBack">Date de retour<a class="amsterism">*</a> :</label>
+			<input name="dateBack" id="dateBack" type="date" required>
+		    </div>
+		    
+		    <div>
+			<label for="adults">Nombre d'adultes<a class="amsterism">*</a> : </label>
+			<input name="adults" id="adults" type="number" min="0" required>
+		    </div>
+		    
+		    <div>
+			<label for="kids">Nombre d'enfants (-12 ans)<a class="amsterism">*</a> : </label>
+			<input name="kids" id="kids" type="number" min="0" required>
+		    </div>
+		    
+		    <div>
+			<label for="breakfast">Petit déjeuner ? </label>
+			<input name="breakfast" id="breakfast" type="checkbox">
+		    </div>
+		    
+		    <div>
+			<label for="commentary">Commentaire : </label>
+			<input name="commentary" id="commentary" placeholder="Quelque chose à nous dire ?"></input>
+		    </div>
+		    
+		    <div>
+			<input name="sauv" value="Envoyer !" type="submit"></input>
+			<input name="sauv" value="Remise à 0" type="submit"></input>
+		    </div>
+		    
+		    <div id="info">Les champs marqués d'un astérisque sont obligatoires</div>
+		    
+		    
+		</div>	
+		    </form>
+	      
+	 
+	</body>
+	
+	<footer>
+	
+	    <p> Pour plus d'information, <a href="./contact.html">contactez-nous</a>.</p>
+	    <p> Site développé de mains de maîlabeles par Léo Meynet et Robin Devillebichot.</p>
+	
+	</footer>
+	
+</html>
