@@ -62,22 +62,7 @@ function tic_tac_toe() {
     }
   }
   
-  for(i=0; i<10; i++){				//Boucles affichage chiffres
-    for(j=0; j<10; j++){
-      if(i==0){
-	
-      }
-      else if(j==0){
-	
-      }
-      else if(i==9){
-	
-      }
-      else if(){
-	
-      }
-    }
-  }
+
 }
 
 
