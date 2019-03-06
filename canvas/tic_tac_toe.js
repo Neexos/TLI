@@ -62,7 +62,47 @@ function tic_tac_toe() {
     }
   }
   
+  for(i=0; i<10; i++){				//Boucles affichage chiffres (i=ligne, j=colonne)
+    for(j=0; j<10; j++){
+      if(bomb[i][j]=="a"){
+        if(i==0){
+          if(i==0 && j==0){         //coin haut gauche 
+            if(bomb[i][j+1]=="b"){
+              pion[i][j]++;
+            }
+            if(bomb[i+1][j+1]=="b"){
+              pion[i][j]++;
+            }
+            if(bomb[i+1][j]=="b"){
+              pion[i][j]++;
+            }
+          }
 
+          if(i==0 && j==9){         //coin haut droite 
+            if(bomb[i][j-1]=="b"){
+              pion[i][j]++;
+            }
+            if(bomb[i+1][j-1]=="b"){
+              pion[i][j]++;
+            }
+            if(bomb[i+1][j]=="b"){
+              pion[i][j]++;
+            }
+          }
+        }
+        
+        else if(j==0){
+    
+        }
+        else if(i==9){
+    
+        }
+        else if(j==9){
+    
+        }
+      }
+    }
+  }
 }
 
 
@@ -74,7 +114,7 @@ function getRandomInt(max){
 
 function un(x,y){
   context.beginPath();
-  context.fillStyle="#000000"
+  context.fillStyle="#000000";
   context.font ="40px Arial";
   context.fillText("1",(x*2+1)*50,(y*2+1)*50);
   context.stroke();
@@ -82,25 +122,15 @@ function un(x,y){
 
 function deux(x,y){
   context.beginPath();
-  context.fillStyle="#000000"
+  context.fillStyle="#000000";
   context.font ="40px Arial";
   context.fillText("2",(x*2+1)*50,(y*2+1)*50);
-  context.stroke();for(i=0; i<10; i++){
-    bomb[i] = new Array(2);
-      for(j=0; j<10; j++){
-        if(getRandomInt(2) == 1){
-          bomb[i][j] = "b";
-        }
-        else{
-          bomb[i][j] = "a";
-        } //affecte a ou b à une case. b = bomb | a = Pas de bomb
-      }
-    }
+  context.stroke();
 }
 
 function trois(x,y){
   context.beginPath();
-  context.fillStyle="#000000"
+  context.fillStyle="#000000";
   context.font ="40px Arial";
   context.fillText("3",(x*2+1)*50,(y*2+1)*50);
   context.stroke();
@@ -108,7 +138,7 @@ function trois(x,y){
 
 function quatre(x,y){
   context.beginPath();
-  context.fillStyle="#000000"
+  context.fillStyle="#000000";
   context.font ="40px Arial";
   context.fillText("4",(x*2+1)*50,(y*2+1)*50);
   context.stroke();
@@ -116,7 +146,7 @@ function quatre(x,y){
 
 function cinq(x,y){
   context.beginPath();
-  context.fillStyle="#000000"
+  context.fillStyle="#000000";
   context.font ="40px Arial";
   context.fillText("5",(x*2+1)*50,(y*2+1)*50);
   context.stroke();
